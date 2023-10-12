@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El clima</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href=".styles/style.css">
+    <script src="https://kit.fontawesome.com/f00683b7b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- https://openweathermap.org/current -->
+    <main class="container is-mobile">
+        <div class="is-flex is-flex-direction-column">
+            <div class="location" id="location-container"></div>
+            <div class="temp" id="temp-container"></div>
+            <div class="extra columns is-multiline is-mobile" id="extra-container">
+                <div class="column is-6" id="temp-min"></div>
+                <div class="column is-6" id="temp-max"></div>
+                <div class="column is-6" id="humidity"></div>
+                <div class="column is-6"id="feels-like"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
